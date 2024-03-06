@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <body class="sub_page" >
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <img src="images/hero-bg.png" alt="">
+    </div>
+
+    <!-- style -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Nunito', sans-serif;
+        color: #000000;
+        overflow-x: hidden;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+      Style the header
+      .header {
+        grid-area: header;
+        background-color: rgb(253, 250, 250);
+        /* background-color: #88F4C1; */
+        /* animation: mymove 10s infinite; */
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+      }
+     
+      
+      /* The grid container */
+      .grid-container {
+        display: grid;
+        /* background-color: #88F4C1; */
+        grid-template-areas: 
+          'header header header header header header' 
+          'left left middle middle right right' 
+          'footer footer footer footer footer footer';
+          grid-column-gap: 25px;
+          
+      } 
+
+      @keyframes mymove {
+  90% {box-shadow: 40px 50px 60px rgb(137, 212, 137);}
+}
+      .left,
+      .middle,
+      .right {
+        padding: 10px;
+        /*  height: 900px; Should be removed. Only for demonstration */
+      }
+      
+      /* Style the left column */
+      .left {
+            display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 5%;
+      background-color: #ffffff;
+      padding: 2%;
+      border-radius: 5px;
+      text-align: justify;
+      animation: mymove 5s infinite;
+      }
+      
+      /* Style the middle column */
+      .middle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 5%;
+        background-color: #ffffff;
+        padding: 2%;
+        border-radius: 5px;
+        text-align: justify;
+        animation: mymove 5s infinite;
+      }
+      
+      /* Style the right column */
+      .right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 5%;
+        background-color: #ffffff;
+        padding: 2%;
+        border-radius: 5px;
+        text-align: justify;
+        animation: mymove 5s infinite;
+      }
+      
+      
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        .grid-container  {
+          grid-template-areas: 
+            'header header header header header header' 
+            'left left left left left left' 
+            'middle middle middle middle middle middle' 
+            'right right right right right right' 
+            'footer footer footer footer footer footer';
+        }
+      }  
+    </style>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Curosil lifecare pvt LTD  
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Product Range.html">Product Range</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Products.html">Products</a>
+            </li>
+           <!-- <li class="nav-item">
+              <a class="nav-link" href="doctors.html">Doctors</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!-- end header section -->
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+  
+    <title> Curosil </title>
+  
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+  
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  
+  </head>
+
+  <!-- body  -->
+  <div class="grid-container">
+    
+    
+    <div class="left" style="background-color: #88F4C1;">
+      <h2><u>CUROGEL</u> (Absorbable Gelatin Sponge USP)</h2>
+      <p>
+        CUROGEL that is non-allergenic, non-toxic, and bio-absorbable. CUROGEL is a surgical haemostatic sponge, manufactured from highly purified AAA grade gelatin material for us in various surgical procedures, where traditional haemostatic is difficult or impractical and use of other non-absorbable materials is undesirable. The sponge is easily cut to fit the bleeding surface. We have two kinds of packing, Blister and medical grade paper pouch.
+      </p>
+      <a href="Products.html" margin: 5%;>
+        Read More
+      </a> 
+        
+    </div>
+
+    <div class="middle" style=" background-color: #6CE4AB;" >
+      <h2><u>OXIDIZED REGENERATED CELLULOSE</u></h2>
+      <p>Oxidized regenerated cellulose is a chemically altered form of cellulose, which is particularly useful to control diffuse bleeding from broad surfaces. CUROGEL-OXI has mechanical hemostatic effects as a result of swelling from blood absorption, and it activates coagulation on the collagen surface.</p>
+      <p>CUROGEL-OXI also acts as a caustic hemostatic agent because of its low pH. The low pH additionally confers antibacterial properties and therefore is preferred over gelatin foam for use in contaminated areas. CUROGEL-OXI should not be soaked in thrombin, because the biologic agents will be inactivated in the low-pH environment. The low pH may also lead to tissue inflammation and delayed wound healing, so any excess product should be removed from the surgical site. This product is absorbed in 7 to 14 days, although residue from the material may persist for several months to years.</p>
+      <p><b>FEATURES OF CUROGEL-OXI</b><br></p>
+        <ul>
+          <li>Absorbable hemostat</li>
+          <li>Made from oxidized regenerated cellulose (plant-based product)</li>
+          <li>Malleable and flexible</li>
+          <li>Biocompatible: No tissue reaction</li>
+          <li>Antibacterial: Low pH</li>
+          <li>Easy to use</li>
+
+        </ul>
+        CUROGEL-OXI is convenient to use. It is safe and effective providing easy and fast absorption with no potential immune response.<br>
+        <br>
+        <B> APPLICATIONS</B>        
+        <ul>
+          <li>Neurosurgery &#45;	 operative intervention into the &#45;	 cerebrum, ventricular system, spinal surgery | approaches to the skull base | cerebrovascular surgery</li>
+          <li>Cardiac Surgery &#45;	 valve replacement surgery | sterna medullary bleeding</li>
+          <li>Gynecological surgeries &#45;	 Uterine wall perforation</li>
+          <li>General surgeries &#45;	 Iatrogenic perforations</li>
+          <li>ENT &#45;	 posterior epistaxis</li> 
+        </ul>
+
+       
+ 
+        <a href="Applications.html" margin: 5%;>
+          Read More
+        </a> 
+    </div>  
+    <div class="right" style=" background-color: #88F4C1;">
+      <h2><u>TISSEEL</u></h2>
+      <p>Tisseel is a fibrin sealant with a proven history of clinical safety and efficacy that surgeons rely on for use as an adjunct to hemostasis.</p>
+      <p>Tisseel helps surgeons address bleeding in sites inaccessible to "surgical" means (i.e., sutures and cautery) with uniform placement thanks to our Duplospray System, allowing surgeons to get as close as 2-5 cm to the tissue for laparoscopic surgery.
+        As a leader in hemostasis, we are committed to providing innovative solutions for surgeons. Tisseel is effective across surgical specialties, and is for adjunctive hemostasis across a wide range of surgical specialties to:
+        <ul>
+          <li>Control bleeding in heparinized patients.</li>
+          <li>Control bleeding in patients medicated with antiplatelet drugs.</li>
+          <li>Create hemostasis on poor tissue characteristics (such as friable tissue)</li>
+        </ul>
+        *Do not use Tisseel for treatment of severe or brisk arterial bleeding
+        </p>
+      <p>Indications<br>
+        <p>
+          <b>Hemostasis: </b> Tisseel is a fibrin sealant indicated for use as an adjunct to hemostasis in adult and pediatric patients (>1 month of age) undergoing surgery when control of bleeding by conventional surgical techniques (such as suture, ligature, and cautery) is ineffective or impractical. Tisseel is effective in heparinized patients.
+        </p>
+        <p>
+          <b>Sealing: </b> Tisseel is a fibrin sealant indicated as an adjunct to standard surgical techniques (such as suture and ligature) to prevent leakage from colonic anastomoses following the reversal of temporary colostomies.
+        </p>
+        <style>
+          table, th, td {
+              border: 2px solid white;
+              border-collapse: collapse;
+              }
+
+        </style>
+        <table style="width:100%" >
+          <tr>
+            <th> REF#</th>
+            <th> PRODUCT NAME </th>
+            <th> QTY</th>
+          </tr>
+          <tr>
+            <td> FST105</td>
+            <td> FIBRIN SEALANT TISSEEL </td>
+            <td> 1ml, 2ml and 4ml</td>
+          </tr>
+        </table>
+    </div>  
+  </div>
+
+<!-- footer section -->
+<footer class="footer_section">
+  <div class="container">
+    <div class="heading_container">
+      <h2>
+        Reach <span>at</span>
+      </h2><br>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-3 footer_col">
+        <div class="footer_contact">
+          
+          <h4>
+            HEAD OFFICE INDIA
+          </h4>
+          <div class="contact_link_box">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                CUROSIL LIFECARE PVT LTD<br>
+                234, CUROSIL HOUSE, <br>
+                Kamalbaug Soc., Ambavadi L.H.Raod,<br>
+                Surat-395006, Gujarat<br>
+                India.<br>
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call +91-261-6568534
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                curosillifecare@gmail.com
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                care@curosil.co.in 
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 footer_col">
+        <div class="footer_detail">
+          <div class="footer_contact">
+            <h4>
+              MARKETING OFFICE INDIA
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  CUROSIL LIFECARE PVT LTD<br>
+                  B/1, 1st Floor, Shayamnagar Society,<br>
+                  Near Shayamnagar Vadi, <br>
+                  Opp. Bank Of Baroda,<br>
+                  Surat-395006,<br>
+
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +91-9737420167
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  curosillifecare@gmail.com
+                </span>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 footer_col">
+        <div class="footer_detail">
+          <div class="footer_contact">
+            <h4>
+              OSFIN INTERNATIONAL LLP
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  B/206, <br>
+                  Apex Commercial Centre, <br>
+                  Nr Yash plaza, <br>
+                  Surat-395006, <br>
+                  Gujrat, India<br>
+
+                </span>
+              </a>
+             
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  osfin.sales@gmail.com
+                </span>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-3 footer_col">
+        <div class="footer_detail">
+          <div class="footer_contact">
+            <h4>
+              USA MARKETING OFFICE 
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  <b>ONETEX EXPORTS LLC </b><br>                               
+                  45566, Mallard Point Ter <br>
+                  Sterling, Potomac Falls<br>
+                  VA 20165-6575, USA<br><br>
+                </span>
+              
+                <h4>
+                  AUSTRALIA MARKETING OFFICE
+                </h4>
+              
+              <span>                          
+                55 Long Lands Street,<br>
+                East Brisbane,<br>
+                Queensland-4169,<br>
+                Australia<br>
+              </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  info@onetexindia.com
+                </span>
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+    <div class="footer-info">
+      <p>
+        &copy; <span id="displayYear"></span> 
+        <a href="index.html">All Rights Reserved By Curosil<br><br></a>  
+      </p>
+     
+    </div>  
+  </div>
+</footer>
+<!-- footer section -->
+
+<!-- jQery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- popper js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<!-- bootstrap js -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- owl slider -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+</script>
+<!-- custom js -->
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+</script>
+<!-- End Google Map -->
+
+</body>
+
+</html>
